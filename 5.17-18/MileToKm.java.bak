@@ -1,0 +1,16 @@
+//마일을 킬로미터로 변환
+
+import java.util.Scanner;
+
+public class MileToKm {
+	public static void main(String args[]) {
+		double mile;
+		double km;
+		Scanner input = new Scanner(System.in);
+		System.out.print("마일을 입력하시오: ");
+		 
+      	mile = input.nextDouble();
+		km = 1.609 * mile ;
+		System.out.print(mile + "마일은" + km + "km입니다");
+	}
+}

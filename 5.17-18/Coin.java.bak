@@ -1,0 +1,22 @@
+import java.util.Scanner;
+public class Coin{
+	public static void main(String args[]) {
+		System.out.println("돈의 액수 계산");
+		Scanner score = new Scanner(System.in);
+		
+		System.out.print("500원짜리 개수를 입력하시오.: ");
+		int won500 = score.nextInt();
+
+        System.out.print("100원짜리 개수를 입력하시오.: ");
+		int won100 = score.nextInt();
+		
+		System.out.print("50원짜리 개수를 입력하시오.: ");
+		int won50 = score.nextInt();
+		
+	    System.out.print("10원짜리 개수를 입력하시오.: ");
+		int won10 = score.nextInt();
+	
+         int sum = (won500 * 500) + (won100 * 100) + (won50 * 50) + (won10 * 10);
+		  System.out.print("금액은" + sum);
+	}
+}

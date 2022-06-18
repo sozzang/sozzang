@@ -1,0 +1,15 @@
+public class Test {
+	public static void main(String args[]) {
+		//리터럴 상수 
+		//개발자가 의도대로 상수의 값을 정해두었기 때문에 사용자가 바꿀 수 없다.
+		// '='는 같다가 아니라 대입한다. 라는 말
+		int x = 20;
+		int y = 30;
+		
+		
+		System.out.println(x + y);
+		System.out.println(x - y);
+		System.out.println(x * y);
+		System.out.println(x / y);
+ }
+}

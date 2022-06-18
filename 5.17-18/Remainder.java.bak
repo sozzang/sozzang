@@ -1,0 +1,21 @@
+//큰 수를 작은 수로 나눈 몫과 나머지를 출력하라
+//큰 수가 먼저 입력
+
+import java.util.Scanner;
+public class Remainder{
+	public static void main(String args[]) {
+		System.out.println("나눈 몫과 나머지를 출력하라");
+		Scanner remainder = new Scanner(System.in);
+		System.out.print("첫번째 정수를 입력하시오.: ");
+		int large = remainder.nextInt();
+			  
+		System.out.print("두번째 정수를 입력하시오.: ");
+		int small = remainder.nextInt();
+		
+		System.out.printf("%d을 %d으로 나눈 값은 %d이고 나머지는 %d입니다.",large,small, large/small, large%small);
+		/*System.out.println("몫은 " + (large / small) + "나머지는 " (large  % small));
+	
+	    System.out.printf("%dHello %dworld \n",1,2); //%d:정수를 넣을 것이다. 쉼표 찍고 순서대로 숫자나열
+		System.out.printf("Hello world"); //서식이 있는 printf 에서만 가능 */
+	}
+}
