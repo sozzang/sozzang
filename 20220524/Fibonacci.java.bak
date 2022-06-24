@@ -1,0 +1,25 @@
+//Fibonacci 수열
+// 1 1 2 3 5 8 13 21 34 ...
+// 100이하
+
+public class Fibonacci {
+	public static void main (String[] args){
+		int x = 1; 
+		int y = 1; 
+		int z ;
+		System.out.println(y);
+		
+		while (y <= 100) {
+			System.out.println(y);
+			z= x + y;
+			x=y;
+			y=z;
+		}
+		
+			
+		
+		
+		
+	
+	}
+}
