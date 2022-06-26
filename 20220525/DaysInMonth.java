@@ -1,0 +1,44 @@
+import java.util.*;
+
+public class DaysInMonth {
+	public static void main(String[] args){
+		Scanner scan = new Scanner(System.in);
+	
+		int month;
+		int years = 2009;
+		int days = 0;
+		System.out.println("일수를 알고싶은 달을 입력하세요.: ");
+		month = scan.nextInt();
+		
+		
+		switch(month){
+			case 1: 
+			case 3:
+			case 5:
+			case 7:
+			case 8:
+			case 10:
+			case 12:
+			days = 31;
+			break;
+			 
+			 case 4: 
+			 case 6:
+			 case 9:
+			 case 11:
+			 days = 30;
+			 break;
+			 
+			 case 2: //case 안에도 조건문이 들어올 수 있다.
+			 if(((years % 4) == 0 && (years % 100 !=0)) || (years % 400 == 0)) //윤년
+			 days = 29;
+			 else 
+				 days = 28; //평년
+			 break;
+			 default: 
+			 System.out.println("월이 잘못 입력되었습니다.");
+			 break;
+		}
+		System.out.println("월의 날수는 " + days);
+	}
+}
