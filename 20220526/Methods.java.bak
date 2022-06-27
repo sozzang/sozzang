@@ -1,0 +1,26 @@
+public class Methods {
+	//숫자 하나가 짝수, 홀수 인지 알 수 있는 기능을 하는 메소드
+	 public static boolean isEven(int a){
+		 return a % 1 == 0 ;
+	 }
+	
+	// public static int increase(int a) {
+		// a++;
+		// return a;
+	// }
+	
+	// public static int, int createTwoNumber(){
+		// return 20, 30;
+	// }
+	
+	public static void main(String[] args){
+		
+		 boolean result = isEven(10);
+		 System.out.println(result);
+		 
+		// int a = 10; 
+		// a = increase(a); //Call By Value 값에 의한 호출
+		
+		// System.out.println(a);
+	}
+}
