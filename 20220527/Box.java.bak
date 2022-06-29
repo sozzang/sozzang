@@ -1,0 +1,31 @@
+//모든 현실의 객체(object) -> 객체로 보는 시선에서 시작 
+//객체 : 상태와 동작을 가짐 
+//객체 지향 프로그램이란?
+//객체를 코드로 작성하여 코드로 만들어진 객체를 통하여 
+//객체들 간에 메세지를 주고 받으며 프로그램의 흐름을 만들어 내는 방식
+//현실 박스의 본을 따 코드로 만들어진 가짜 박스 코드 
+//그 박스들 끼리 메세지를 주고 받으며 상호 소통을 하고 동작을 한다 ..
+
+public class Box {
+	
+	int length;
+	int width;
+	int height; 
+	
+	// 이러한 값과 상태를 가진 박스, 변수의 형태로 표현이 가능
+	// 값/상태 -> 멤버변수 (member variable) / 필드(feilds)
+    public void printAllState(){
+	      System.out.println(width);
+          System.out.println(length);
+	      System.out.println(height);	  
+ }
+    
+     // 박스는 자기 자신의 부피를 구해서 정수형 값으로 
+	 // 알려줄 수 있음. ( 값이 아닌 알려준다에 집중)
+	 
+	 public int getVolume(){
+		 return width * length * height ;
+	 }
+	 
+ 
+}

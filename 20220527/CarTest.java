@@ -1,0 +1,27 @@
+class Car {
+	//필드 정의
+	String color; //색상
+	int speed; //속도
+	int gear; //기어
+	
+	void print(){ //public이 있어도 되고 없어도 됨 여기서는 
+		System.out.println ("(" + color + ", " + speed + ", " + gear +")");
+	}
+}
+
+public class CarTest{
+	public static void main(String[] args){
+	Car myCar = new Car();
+	myCar.color = "red";
+	myCar.speed = 0;
+	myCar.gear = 1;
+	myCar.print(); // void print() 얘를 호출해온거임
+	
+	Car dadCar = new Car();
+	dadCar.color = "blue";
+	dadCar.speed = 60;
+	dadCar.gear = 3;
+	dadCar.print();
+	// 색blue 속60 기3 인 자동차
+}
+}

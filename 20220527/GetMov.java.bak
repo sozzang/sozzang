@@ -1,0 +1,31 @@
+// 3. 영화
+// 필드 : 제목, 평점, 감독, 발표된 연도
+// 모든 값을 콘솔 출력하는 기능
+
+public class Mov {
+	
+	String title;
+	String grade;
+	String director;
+	int year;
+	
+    void printAll(){
+	System.out.println("제목: " + title);
+    System.out.println("평점: " + grade);
+	System.out.println("감동: " + director);
+	System.out.println("발표연도: " + year);
+	 
+	}
+}
+	
+	public class GetMov{
+		public static void main(String[] args){
+			Mov movie = new Mov();
+			movie.title = "Inside out";
+			movie.grade = "★9.05";
+			movie.director = "Pete Docter";
+			movie.year = 2015;
+			movie.printAll();
+		
+	}
+}

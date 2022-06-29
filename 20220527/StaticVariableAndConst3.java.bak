@@ -1,0 +1,19 @@
+public class StaticVariableAndConst3{ 
+    public  static int number = 100; //전역변수
+
+
+    public static void test(){
+		number++;
+		System.out.println(number);
+	}
+
+
+
+	public static void main(String[] args){
+		number++;
+		System.out.println(number);
+		
+		test();
+	}
+}
+
